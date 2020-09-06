@@ -19,6 +19,7 @@ public class LevelExit : MonoBehaviour
         Time.timeScale = LevelExitSlowMoFactor;
         yield return new WaitForSecondsRealtime(levelLoadDelay);
         Time.timeScale = 1f;
+        Destroy(FindObjectOfType<ScenePersist>());
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
