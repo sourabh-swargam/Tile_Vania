@@ -3728,7 +3728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3880,7 +3880,7 @@ GameObject:
   - component: {fileID: 862164392}
   - component: {fileID: 862164395}
   m_Layer: 5
-  m_Name: Replay Button
+  m_Name: Quit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3903,8 +3903,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -161.29999, y: 75}
-  m_SizeDelta: {x: -675.66364, y: -451.20102}
+  m_AnchoredPosition: {x: -161.29999, y: 56.99}
+  m_SizeDelta: {x: -675.66364, y: -415.18018}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &862164392
 MonoBehaviour:
@@ -3951,7 +3951,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 862164395}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: StartFirstLevel
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6901,20 +6901,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Replay
-
-'
+  m_Text: Quit
 --- !u!222 &927057140
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7054,10 +7052,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -7111,8 +7109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 163, y: 75}
-  m_SizeDelta: {x: -668.87115, y: -451.20102}
+  m_AnchoredPosition: {x: 163, y: 56.99}
+  m_SizeDelta: {x: -668.87115, y: -415.18018}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761086679
 MonoBehaviour:
