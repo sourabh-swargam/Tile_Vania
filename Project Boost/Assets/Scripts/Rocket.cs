@@ -33,7 +33,7 @@ public class Rocket : MonoBehaviour
         }
         else
         {
-            audioSource.Stop()
+            audioSource.Stop();
         }
 
         if (Input.GetKey(KeyCode.A))
