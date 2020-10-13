@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 842980479672136380, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15
+      value: -22
       objectReference: {fileID: 0}
     - target: {fileID: 842980479672136380, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -201,7 +201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 842980479672136380, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.6
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 842980479672136380, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
       propertyPath: m_LocalRotation.x
@@ -209,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 842980479672136380, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.10537026
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 842980479672136380, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
       propertyPath: m_LocalRotation.z
@@ -217,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 842980479672136380, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99443305
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 842980479672136380, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
       propertyPath: m_RootOrder
@@ -229,7 +229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 842980479672136380, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 12.097
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 842980479672136380, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -254,6 +254,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 842980479672136380, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
   m_PrefabInstance: {fileID: 402641708}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &402641710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 842980479672136376, guid: 171bd3534ce1e404187702ff3d215d11, type: 3}
+  m_PrefabInstance: {fileID: 402641708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &402641711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402641710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850a5a7bcdf190f4f8ea1ed80bcc879b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 24, y: 0, z: 0}
+  period: 3
+  movementFactor: 0.14
 --- !u!1001 &462882661
 PrefabInstance:
   m_ObjectHideFlags: 0
