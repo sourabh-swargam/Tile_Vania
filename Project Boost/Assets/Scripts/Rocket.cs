@@ -10,6 +10,7 @@ public class Rocket : MonoBehaviour
     [SerializeField] float rcsThrust = 200f;
     [SerializeField] float mainThrust = 35f;
     [SerializeField] float leveLoadDelay = 2f;
+    [SerializeField] bool collisionsDisabled = false;
 
     [SerializeField] AudioClip mainEngine;
     [SerializeField] AudioClip success;
@@ -25,6 +26,7 @@ public class Rocket : MonoBehaviour
     enum State { Alive, Dying, Transcending }
     State state = State.Alive;
 
+
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
@@ -39,6 +41,23 @@ public class Rocket : MonoBehaviour
             RespondToThrustInput();
             RespondToRotateInput();
         }
+
+        if (Debug.isDebugBuild)
+        {
+            RespondToDebugKeys();
+        }
+    }
+
+    private void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            collisionsDisabled = !collisionsDisabled;
+        }
     }
 
     private void RespondToThrustInput()
@@ -46,6 +65,7 @@ public class Rocket : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             ApplyThrust();
+            mainEngineParticles.Play();
         }
         else
         {
@@ -61,7 +81,6 @@ public class Rocket : MonoBehaviour
         {
             audioSource.PlayOneShot(mainEngine);
         }
-        mainEngineParticles.Play();
     }
 
     private void RespondToRotateInput()
@@ -83,7 +102,7 @@ public class Rocket : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (state != State.Alive) { return; }
+        if (state != State.Alive || collisionsDisabled) { return; }
 
         switch (collision.gameObject.tag)
         {
